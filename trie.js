@@ -44,7 +44,7 @@ Trie.prototype.getWords = function(prefix){
   // it will use currentWord as a prefix,
   // since a Trie doesn't know about its parents.
 
-  wordsToReturn = [];
+  var wordsToReturn = [];
 
   if (!prefix) {
     prefix = "";
@@ -91,7 +91,6 @@ Trie.prototype.autoComplete = function(prefix){
   // This function will return all completions 
   // for a given prefix.
   // It should use find and getWords.
-  arrayOfWords = [];
   var findWords = this.find(prefix);
 
   if (!findWords) {
