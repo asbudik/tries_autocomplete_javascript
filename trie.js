@@ -54,7 +54,7 @@ Trie.prototype.getWords = function(prefix){
     return wordsToReturn;
   } else {
     if (this.isWord) {
-      // change this.value for implicit autocomplete, and not
+      // change this.value for explicit autocomplete, and not
       // getWords() or else we must splice(0, 1)
       wordsToReturn.push(prefix + this.value);
     }
